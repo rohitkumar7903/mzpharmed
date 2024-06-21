@@ -3,7 +3,6 @@ import Navbar from '../components/Navbar';
 import Herosection from './Herosection';
 
 import Footer from './Footer';
-import Divider from '../components/Divider';
 
 function Landing() {
   return (
@@ -11,9 +10,11 @@ function Landing() {
       <Navbar />
       <br />
       <br />
-      <section id="home">
-        <img className='w-[100%] pt-[2.5%]' src="src/assets/bgimageafrican (1).png" alt="" />
-      </section>
+      
+      <section id="home" className="relative w-full overflow-hidden">
+  <img className='w-full  pt-2.5 md:pt-5 lg:pt-10 object-cover ' src="src/assets/bgimageafrican (1).png" alt="Background" />
+</section>
+
       <Herosection />
       
       <Footer />

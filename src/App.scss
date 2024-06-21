@@ -1,14 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 .carousel {
   position: relative;
-  width: 70%;  // Adjust to fit 3 cards
-  height: 20rem;  // Ensure this matches the height of the cards
+  width: 70%; 
+  height: 20rem;  
   display: flex;
   align-items: center;
   overflow: hidden;
 }
 
 .card-container {
-  min-width: calc(100% / 4);  // Ensure 3 cards fit in the container
+  min-width: calc(100% / 4);  
   transition: transform 0.5s ease;
 }
 
@@ -48,9 +49,9 @@
 }
 
         
-    .DLine {
+.DLine {
   display: flex;
-  height: 10px; /* Set the desired height for the divider */
+  height: 10px;
 }
 
 .Dline1 {
@@ -78,18 +79,66 @@
   background-color: #AC1CB2;
 }
 
+
 .nav-links {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 60%; /* Adjust the width as needed to fit your design */
+  width: 60%; 
 }
 
 .nav-link {
-  text-decoration: none; /* Optional: Remove underline from links */
-  color: white; /* Optional: Ensure text color is white */
-  padding: 0 10px; /* Optional: Add some padding to each link */
+  text-decoration: none; 
+  color: white; 
+  padding: 0 10px; 
 }
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900
+    //  distribution css from here 
+
+.OurDistributionNetwork {
+  text-shadow: 2px 2px 4px #3f3f3f;
+  // font-family: poppins;
+  font-weight: 650;
+  color: #ffffff;
+  font-size: 47px
+}.SectionOfFlags {
+  display: flex;
+justify-content: space-between;
+padding: 40px 180px;
+}
+.flags {
+  width: 100%;
+}
+.flagbox {
+  width: 86%;
+  height: 148px;
+
+
+}
+.Countrybox {
+  display: flex;
+  flex-direction: column;
+align-items: center;
+justify-content: space-between;
+  width: 148px;
+  height: 179px;
+  font-size: 18px;
+  font-family: poppins;
+  font-weight: 650;
+}
+.distbanner {
+  width: 100%;
+  height: 209px;
+  background-image: url(Blue\ and\ White\ Simple\ Health\ Medical\ Banner\ Landscape.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
 

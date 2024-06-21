@@ -1,10 +1,20 @@
-import React from 'react'; 
+import React from 'react';
+import { HiArrowCircleUp } from 'react-icons/hi'; 
 
 function Footer() {
   return (
-    <>
-    <section className="bg-[#1d4249] pt-0" style={{top:'0'}}>
-      <div className="max-w-screen-xl px-4  mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
+    <section 
+      className="pt-0 relative" 
+      style={{ backgroundImage: ' linear-gradient(to bottom, #132c31, #102830, #10242f, #12202d, #141b2a)' }}
+    >
+      <div className="relative max-w-screen-xl px-4 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
+        <a 
+          className="absolute right-0 bottom-5 ml-4 mb-4 text-white z-50" 
+          href="#" 
+          style={{ height: '3em', width: '3em' }}
+        >
+          <HiArrowCircleUp style={{ height: '100%', width: '100%' }} />
+        </a>
         <nav className="flex flex-wrap justify-center -mx-5 -my-2">
           <div className="px-5 py-2">
             <a href="#" className="text-base leading-6 text-white hover:text-gray-300">
@@ -43,23 +53,16 @@ function Footer() {
           <a href="#" className="text-white hover:text-gray-300">
             <span className="sr-only">Twitter</span>
             <svg className="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
-            </svg>
-          </a>
-          <a href="#" className="text-white hover:text-gray-300">
-            <span className="sr-only">GitHub</span>
-            <svg className="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
-              <path fillRule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.155-1.11-1.464-1.11-1.464-.908-.62.069-.607.069-.607 1.003.07 1.53 1.03 1.53 1.03.892 1.528 2.341 1.087 2.91.831.09-.647.35-1.087.635-1.337-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.985 1.03-2.683-.103-.253-.447-1.27.098-2.645 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.845c.85.004 1.705.115 2.504.337 1.908-1.294 2.747-1.025 2.747-1.025.547 1.375.202 2.392.1 2.645.64.698 1.03 1.592 1.03 2.683 0 3.842-2.339 4.687-4.566 4.937.359.309.678.921.678 1.856 0 1.34-.012 2.422-.012 2.753 0 .268.18.579.688.481C19.135 20.164 22 16.418 22 12c0-5.523-4.477-10-10-10z" clipRule="evenodd"></path>
+              <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.482A4.073 4.073 0 012 9.713v.052a4.107 4.107 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.109 4.109 0 003.834 2.85A8.233 8.233 0 012 18.407 11.616 11.616 0 006.29 20c7.548 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.482A4.073 4.073 0 012 9.713v.052a4.107 4.107 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.109 4.109 0 003.834 2.85z"></path>
             </svg>
           </a>
         </div>
-        <p className="mt-8 text-base leading-6 text-center text-white">
-          © 2024 MZ pharmaed. All rights reserved.
+        <p className="mt-8 text-base leading-6 text-center text-gray-400">
+          &copy; 2021 Your Company, Inc. All rights reserved.
         </p>
       </div>
     </section>
-    </>
-  )
+  );
 }
 
 export default Footer;

@@ -4,13 +4,13 @@ import {
   FaSmileBeam,
   FaList,
   FaStar,
-  FaShippingFast
+  FaShippingFast,
 } from 'react-icons/fa';
-import { GiMedicines } from "react-icons/gi";
+import { GiMedicines } from 'react-icons/gi';
 
-const CountUpAnimation = ({ iconComponent, initialValue, targetValue, text }) => {
+const CountUpAnimation = ({ iconComponent, initialValue, targetValue, text, height }) => {
   const [count, setCount] = useState(initialValue);
-  const duration = 5000; 
+  const duration = 5000;
 
   useEffect(() => {
     let startValue = initialValue;
@@ -30,43 +30,58 @@ const CountUpAnimation = ({ iconComponent, initialValue, targetValue, text }) =>
   }, [targetValue, initialValue]);
 
   return (
-    <div className="w-20vmin h-7.5vmin flex flex-col justify-around p-0 relative bg-white shadow-lg rounded-xl text-center transform transition-transform duration-300 hover:scale-105">
-      <div className="text-sky-600 text-4xl text-center">{iconComponent}</div>
-      <span className="text-sky-600 font-semibold text-4xl">{count}</span>
-      <span className="text-gray-800 text-xl p-2 font-semibold uppercase">{text}</span>
+    <div className={`w-full sm:w-3/4 md:w-2/3 lg:w-3/4 xl:w-4/5 mx-auto px-4 mb-8`} style={{ height }}>
+      <div className="flex flex-col items-center justify-center bg-white shadow-lg rounded-xl p-6 transform transition-transform duration-300 hover:scale-105 h-full">
+        <div className="text-sky-600 text-5xl sm:text-6xl mb-4">{iconComponent}</div>
+        <span className="text-sky-600 font-semibold text-4xl sm:text-5xl mb-2">{count}</span>
+        <span className="text-gray-800 text-lg sm:text-xl font-semibold uppercase text-center">{text}</span>
+      </div>
     </div>
   );
 };
 
-function Counter() {
+function Counter({ height = 'auto', paddingY = 'py-1', marginBottom = 'mb-12', textPadding = 'pt-4.5' }) {
   return (
-    <div className="flex flex-col justify-center items-center h-[80vh] bg-[#1d4249]">
-      <h1 className="text-center font-bold text-5xl mb-10 text-[#4c6fba]">Our happy customers</h1>
-      <div className="flex justify-around gap-[8em] flex-wrap w-full lg:w-auto">
-        <CountUpAnimation
-          iconComponent={<FaShippingFast />}
-          initialValue={0}
-          targetValue={150}
-          text="Fast Deliveries"
-        />
-        <CountUpAnimation
-          iconComponent={<FaSmileBeam />}
-          initialValue={0}
-          targetValue={200}
-          text="Happy Customers"
-        />
-        <CountUpAnimation
-          iconComponent={<GiMedicines />}
-          initialValue={0}
-          targetValue={250}
-          text="+ Medicine"
-        />
-        <CountUpAnimation
-          iconComponent={<FaStar />}
-          initialValue={0}
-          targetValue={300}
-          text="Five Stars"
-        />
+    <div
+      className={`${paddingY} md:pt-16 md:pb-20`}
+      style={{
+        backgroundImage: 'linear-gradient(to bottom, #255962, #204d55, #1c4249, #17373d, #132c31)',
+      }}
+    >
+      <div className="container mx-auto px-4 pt-[]">
+        <h1 className={`text-center font-bold text-5xl sm:text-4xl md:text-5xl pt-[3.7em] ${marginBottom} text-[#fafafa] ${textPadding}`}>
+          Our happy customers
+        </h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <CountUpAnimation
+            iconComponent={<FaShippingFast />}
+            initialValue={0}
+            targetValue={150}
+            text="Fast Deliveries"
+            height={height}
+          />
+          <CountUpAnimation
+            iconComponent={<FaSmileBeam />}
+            initialValue={0}
+            targetValue={200}
+            text="Happy Customers"
+            height={height}
+          />
+          <CountUpAnimation
+            iconComponent={<GiMedicines />}
+            initialValue={0}
+            targetValue={250}
+            text="+ Medicines"
+            height={height}
+          />
+          <CountUpAnimation
+            iconComponent={<FaStar />}
+            initialValue={0}
+            targetValue={300}
+            text="Five Stars"
+            height={height}
+          />
+        </div>
       </div>
     </div>
   );
