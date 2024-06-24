@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import {
   FaUtensils,
   FaSmileBeam,
@@ -41,6 +42,7 @@ const CountUpAnimation = ({ iconComponent, initialValue, targetValue, text, heig
 };
 
 function Counter({ height = 'auto', paddingY = 'py-1', marginBottom = 'mb-12', textPadding = 'pt-4.5' }) {
+  const { t, i18n } = useTranslation();
   return (
     <div
       className={`${paddingY} md:pt-16 md:pb-20`}
@@ -50,35 +52,35 @@ function Counter({ height = 'auto', paddingY = 'py-1', marginBottom = 'mb-12', t
     >
       <div className="container mx-auto px-4 pt-[]">
         <h1 className={`text-center font-bold text-5xl sm:text-4xl md:text-5xl pt-[3.7em] ${marginBottom} text-[#fafafa] ${textPadding}`}>
-          Our happy customers
+          {t("Our happy customers.Our happy customers head")}
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <CountUpAnimation
             iconComponent={<FaShippingFast />}
             initialValue={0}
             targetValue={150}
-            text="Fast Deliveries"
+            text= {t("Our happy customers.FAST DELIVERIES")}
             height={height}
           />
           <CountUpAnimation
             iconComponent={<FaSmileBeam />}
             initialValue={0}
             targetValue={200}
-            text="Happy Customers"
+            text={t("Our happy customers.HAPPY CUSTOMERS")}
             height={height}
           />
           <CountUpAnimation
             iconComponent={<GiMedicines />}
             initialValue={0}
             targetValue={250}
-            text="+ Medicines"
+            text={t("Our happy customers.+ MEDICINES")}
             height={height}
           />
           <CountUpAnimation
             iconComponent={<FaStar />}
             initialValue={0}
             targetValue={300}
-            text="Five Stars"
+            text={t("Our happy customers.FIVE STARS")}
             height={height}
           />
         </div>

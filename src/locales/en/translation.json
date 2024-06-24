@@ -1,0 +1,57 @@
+{    
+"navbar":{
+    "MZ pharma ": "MZ Pharmed",
+    "Home": "Home",
+    "About us": "About us",
+    "Product": "Product",
+    "Quality Standards": "Quality Standards",
+    "Contact us": "Contact us"
+      },
+"herosection":{
+      "About us text":" We are a dedicated team of professionals committed to delivering excellence in everything we do. Our journey began with a simple yet powerful vision: to create meaningful experiences that resonate with our clients and communities. Over the years, we have grown and evolved, but our core values of integrity, innovation, and inclusivity have remained steadfast. At the heart of our organization is a passionate belief in the power of collaboration. We believe that by working together and embracing diverse perspectives, we can achieve remarkable outcomes. Our team is made up of talented individuals from various backgrounds, each bringing unique skills and insights to the table. This diversity not only enriches our work but also fosters a culture of continuous learning and growth.",
+      "Vision & Mission":"Vision & Mission",
+      "Vision & Mission text":"We are a dedicated team of professionals committed to delivering excellence in everything we do. Our journey began with a simple yet powerful vision: to create meaningful experiences that resonate with our clients and communities. Over the years, we have grown and evolved, but our core values of integrity, innovation, and inclusivity have remained steadfast.At the heart of our organization is a passionate belief in the power of collaboration. We believe that by working together and embracing diverse perspectives, we can achieve remarkable outcomes. Our team is made up of talented individuals from various backgrounds, each bringing unique skills and insights to the table. This diversity not only enriches our work but also fosters a culture of continuous learning and growth."
+     },
+     "Product": {
+        "See Our Products":"See Our Products",
+        "Blue text":"We have several product candidates in development that we believe have been significantly de-risked ",
+        "White text":"At vero eos et accusam justo duo dolores et ea rebuit et clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore magna aliquyam sedam voluptua at vero eos et accusam et justo duo dolores..",
+        "Button":"See all Products"    
+           },
+      "Quality":{
+        "QUALITYhead":"Quality",
+        "Qualitytext":" All products supplied by Neomedic are manufactured at sites which maintain high levels of product quality. Products supplied by Neomedic are registered with MHRA and conform to CE marking requirements. Where applicable, products supplied by Neomedic are prequalified to WHO standards.  Using only approved raw materials, all Neomedic pharmaceutical products are produced to exacting regulatory requirements and are supported by full sets of local registrations, product dossiers, and equivalence testing. Our commitment to quality is further demonstrated through rigorous internal audits and continuous improvement processes that ensure our products consistently meet or exceed industry standards."
+      } ,
+     "Our Distribution Network":{
+        "Our Distribution Networkhead":"Our Distribution Network",
+        "Mali":"Mali",
+        "Kenya":"Kenya",
+        "Libya":"Libya",
+        "Ghana":"Ghana",
+        "Morocco":"Morocco",
+        "Tunisia":"Tunisia",
+        "Namibia":"Namibia",
+         "Uganda":"Uganda"
+     } ,
+   "Contactus":{
+           "FAQs":"FAQs",
+           "Write your email":"Write your email",
+           "Write your Comment":"Write your Comment",
+           "Button":"Send"
+   },
+   "Our happy customers":{
+            "Our happy customers head":"Our happy customers",
+               "FAST DELIVERIES":"FAST DELIVERIES",
+                "HAPPY CUSTOMERS":"HAPPY CUSTOMERS",
+                "+ MEDICINES":"+ MEDICINES",
+                "FIVE STARS":"FIVE STARS"
+
+            },
+"Footer":{
+  "About":"About",
+  "Pricing":"Pricing",
+  "Contact":"Contact",
+   "Terms":"Terms",
+      "Text":" 2024 MZ Pharmed. All rights reserved"   
+                     }         
+}

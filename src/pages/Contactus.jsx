@@ -1,17 +1,19 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 function Contactus() {
+  const { t, i18n } = useTranslation();
   return (
     <div style={{ backgroundImage: 'linear-gradient(to bottom, #45ab6d, #1a9776, #008277, #116d70, #275861)' }} className="w-full h-[29em] flex flex-col md:flex-row">
       <div className="flex-1 p-8 md:pl-16 flex flex-col justify-center items-center md:items-start">
-        <h1 className="text-3xl font-bold text-white pl-12 text-center md:text-left OurDistributionNetwork">Contact Us</h1>
-        <h2 className="text-xl text-white text-center pl-16 md:text-left mt-2">FAQs</h2>
+        <h1 className="text-3xl font-bold text-white pl-12 text-center md:text-left OurDistributionNetwork">{t("navbar.Contact us")}</h1>
+        <h2 className="text-xl text-white text-center pl-16 md:text-left mt-2">{t("Contactus.FAQs")}</h2>
         <div className="mt-6 flex justify-center md:justify-start w-full">
           <input
             id="email"
             name="email"
             className="w-[20em] h-[2.5em] p-2 rounded-lg"
-            placeholder="Write your email"
+            placeholder= {t("Contactus.Write your email")}
             type="email"
           />
         </div>
@@ -20,12 +22,12 @@ function Contactus() {
             id="comment"
             name="comment"
             className="w-[20em] h-[8em] p-2 rounded-lg"
-            placeholder="Write your comment"
+            placeholder= {t("Contactus.Write your comment")}
           />
         </div>
         <div className="mt-8 flex justify-center pl-16">
         <button className="border w-36 h-12 border-[#2b4183] text-lg md:text-xl font-bold text-[#2b4183] rounded-lg bg-gray-200 hover:bg-[#2b4183] hover:text-white transition duration-500 px-4 py-2">
-      Send
+        {t("Contactus.Button")}
     </button>
           
         </div>

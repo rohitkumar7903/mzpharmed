@@ -1,7 +1,12 @@
 import React from 'react';
 import { HiArrowCircleUp } from 'react-icons/hi'; 
+import { useTranslation } from 'react-i18next';
+
 
 function Footer() {
+ 
+  const { t, i18n } = useTranslation();
+
   return (
     <section 
       className="pt-0 relative" 
@@ -18,22 +23,22 @@ function Footer() {
         <nav className="flex flex-wrap justify-center -mx-5 -my-2">
           <div className="px-5 py-2">
             <a href="#" className="text-base leading-6 text-white hover:text-gray-300">
-              About
+              {t("Footer.About")}
             </a>
           </div>
           <div className="px-5 py-2">
             <a href="#" className="text-base leading-6 text-white hover:text-gray-300">
-              Pricing
+               {t("Footer.Pricing")}
             </a>
           </div>
           <div className="px-5 py-2">
             <a href="#" className="text-base leading-6 text-white hover:text-gray-300">
-              Contact
+               {t("Footer.Contact")}
             </a>
           </div>
           <div className="px-5 py-2">
             <a href="#" className="text-base leading-6 text-white hover:text-gray-300">
-              Terms
+               {t("Footer.Terms")}
             </a>
           </div>
         </nav>
@@ -58,7 +63,7 @@ function Footer() {
           </a>
         </div>
         <p className="mt-8 text-base leading-6 text-center text-gray-400">
-          &copy; 2021 Your Company, Inc. All rights reserved.
+          &copy; {t("Footer.Text")}
         </p>
       </div>
     </section>
