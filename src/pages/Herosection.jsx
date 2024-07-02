@@ -4,17 +4,22 @@ import Carousell from './Carousel';
 import Counter from './Counter';
 import Distribution from './Distribution';
 import Quality from './Quality';
+
+import aboutsimage from '../assets/Aboutus.png';
+import vision2image from '../assets/vision2.png'; 
+import seeproduct from '../assets/seeproduct.png';
+
 import { useTranslation } from 'react-i18next';
 function Herosection() {
   const { t, i18n } = useTranslation();
   return (
     <>
-      <section id='aboutus'>
+      <section id='aboutus' class="aboutus">
         <div className="container mx-auto p-6 md:p-8 lg:p-16">
           <div className="container mx-auto p-4 md:p-8 lg:p-16 bg-white rounded-lg">
             <div className="md:flex md:space-x-8">
               <div className="w-full md:w-1/2">
-                <img className="w-full h-auto" src="src/assets/Aboutus.png" alt="About Us Image" />
+                <img className="w-full h-auto" src={aboutsimage} alt="About Us Image" />
               </div>
               <div className="w-full md:w-1/2 mt-4 md:mt-0">
                 <h2 className="text-2xl md:text-4xl font-bold text-gray-800 mb-4">{t("navbar.About us")}</h2>
@@ -28,23 +33,26 @@ function Herosection() {
                 <h2 className="text-2xl md:text-4xl font-bold text-gray-800 mb-4">{t("herosection.Vision & Mission")}</h2>
                 <p className="text-gray-600 mb-4 text-xl">
                 {t("herosection.Vision & Mission text")}
-                </p>
+                  </p>
               </div>
               <div className="w-full md:w-1/2 mt-4 md:mt-0">
-                <img className="w-full h-auto" src="src/assets/vision2.png" alt="Vision Image" />
+                <img className="w-full h-auto" src={vision2image} alt="Vision Image" />
               </div>
             </div>
           </div>
         </div>
       </section>
-         
+      
+
+  <div class='holderofproducts'>      
+    <div class="holderofproducts2"> 
       {/* Product Section */}
     <div id="product">
       <section  className="relative z-20 bg-cover bg-center flex flex-col md:flex-row items-center p-8 md:p-16" >
   <div className="md:w-1/2 md:pr-8 text-center md:text-left">
     <h1 className="text-3xl md:text-5xl font-bold text-white mb-4 OurDistributionNetwork">{t("Product.See Our Products")}</h1>
     <p className="text-lg md:text-xl font-bold text-[#2b4183] mb-4">
-          {t("Product.Blue text")}
+    {t("Product.Blue text")}
     </p>
     <p className="text-sm md:text-lg  text-white mb-4 leading-relaxed">
     {t("Product.White text")}
@@ -54,16 +62,28 @@ function Herosection() {
     </button>
   </div>
   <div className="md:w-1/2 mt-8 md:mt-0 flex justify-center">
-    <img className="object-cover z-30 rounded-lg" src="src/assets/seeproduct.png" alt="Product image" style={{ width: '100%', maxWidth: '500px', height: 'auto' }} />
+    <img className="object-cover z-30 rounded-lg" src={seeproduct} alt="Product image" style={{ width: '100%', maxWidth: '500px', height: 'auto' }} />
   </div>
+
 </section>
 </div> 
 
+       <div className='Herecomescarousel'>
        <Carousell />
+       </div>
+       </div>
+       </div>
+       <div className="DLine">
+      <div className="Dline1"></div>
+      <div className="Dline2"></div>
+      <div className="Dline3"></div>
+      <div className="Dline4"></div>
+      <div className="Dline5"></div>
+    </div>
        <Quality />
        <Distribution />
       
-      <section id='contactus' className='bg-[#1d4249]'>
+      <section id='contactus'>
         <Contactus />
       </section>
       

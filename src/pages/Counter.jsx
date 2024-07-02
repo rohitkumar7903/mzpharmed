@@ -44,22 +44,18 @@ const CountUpAnimation = ({ iconComponent, initialValue, targetValue, text, heig
 function Counter({ height = 'auto', paddingY = 'py-1', marginBottom = 'mb-12', textPadding = 'pt-4.5' }) {
   const { t, i18n } = useTranslation();
   return (
-    <div
-      className={`${paddingY} md:pt-16 md:pb-20`}
-      style={{
-        backgroundImage: 'linear-gradient(to bottom, #255962, #204d55, #1c4249, #17373d, #132c31)',
-      }}
+    <div className='counterbackground'
     >
       <div className="container mx-auto px-4 pt-[]">
-        <h1 className={`text-center font-bold text-5xl sm:text-4xl md:text-5xl pt-[3.7em] ${marginBottom} text-[#fafafa] ${textPadding}`}>
-          {t("Our happy customers.Our happy customers head")}
+        <h1 className={`text-center font-bold text-5xl sm:text-4xl md:text-5xl ${marginBottom} text-[#fafafa] ${textPadding}`}>
+        {t("Our happy customers.Our happy customers head")}
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <CountUpAnimation
             iconComponent={<FaShippingFast />}
             initialValue={0}
             targetValue={150}
-            text= {t("Our happy customers.FAST DELIVERIES")}
+            text={t("Our happy customers.FAST DELIVERIES")}
             height={height}
           />
           <CountUpAnimation
@@ -80,7 +76,7 @@ function Counter({ height = 'auto', paddingY = 'py-1', marginBottom = 'mb-12', t
             iconComponent={<FaStar />}
             initialValue={0}
             targetValue={300}
-            text={t("Our happy customers.FIVE STARS")}
+            text={t("Our happy customers.FIVE STARS")} 
             height={height}
           />
         </div>

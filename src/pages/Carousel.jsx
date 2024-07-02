@@ -15,7 +15,7 @@ import image10 from '../assets/10.jpg';
 
 // Card component
 const Card = ({ image }) => (
-  <div className='bg-white p-4 rounded shadow-lg' style={{ width: '14em', height: '16rem' }}>
+  <div className='bg-white p-3 rounded shadow-lg' style={{ width: '14em', height: '16rem' }}>
     <img src={image} alt='Card' className='w-full h-full object-cover rounded' />
   </div>
 );
@@ -30,7 +30,7 @@ const Carousel = ({ images, activeIndex }) => {
             key={i}
             className='transition-transform duration-500 flex-none mx-2' // Added mx-2 for margin between images
             style={{
-              transform: `translateX(${-100 * (activeIndex - i)}%)`,
+              transform: `translateX(${-25 * (activeIndex - i)}%)`,
               opacity: Math.abs(activeIndex - i) >= 3 ? 0 : 1,
               display: Math.abs(activeIndex - i) > 2 ? 'none' : 'block',
             }}
@@ -69,6 +69,7 @@ const Carousell = () => {
       <button className='absolute right-0 z-10 text-white' onClick={nextSlide} style={{ top: '50%', transform: 'translateY(-50%)' }}>
         <TiChevronRightOutline size={40} />
       </button>
+      
     </div>
   );
 };
