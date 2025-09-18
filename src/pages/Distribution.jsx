@@ -109,12 +109,12 @@ function Distribution() {
 
       <div class="SectionOfFlags">
 
-<div class="Countrybox">
-        <div class="flagbox">
-        <img class="flags" src="src/assets/Mali.png" alt="" srcset=""/>
-        </div>
-        <span>{t("Our Distribution Network.Mali")}</span>
-    </div>
+      <div className="Countrybox transform transition-transform duration-300 hover:scale-105">
+  <div className="flagbox">
+    <img className="flag" src="src/assets/Mali.png" alt="" />
+  </div>
+  <span>{t("Our Distribution Network.Mali")}</span>
+</div>
 
     <div class="Countrybox">
         <div class="flagbox">

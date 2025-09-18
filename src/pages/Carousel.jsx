@@ -1,86 +1,83 @@
-import React, { useState } from 'react';
-import { TiChevronLeftOutline, TiChevronRightOutline } from 'react-icons/ti';
+import React, { Component } from "react";
+import Carousel from "react-spring-3d-carousel";
+import { v4 as uuidv4 } from "uuid";
+import { config } from "react-spring";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSyringe, faStethoscope, faVirus, faMaskFace, faUserNurse, faVirusCovid, faHospital, faHouseMedical, faPills, faUserDoctor, faVialVirus, faStaffSnake, faPersonBreastfeeding } from '@fortawesome/free-solid-svg-icons';
 
-// Import images
-import image1 from '../assets/1.jpg';
-import image2 from '../assets/2.jpg';
-import image3 from '../assets/3.jpg';
-import image4 from '../assets/4.jpg';
-import image5 from '../assets/5.jpg';
-import image6 from '../assets/6.jpg';
-import image7 from '../assets/7.jpg';
-import image8 from '../assets/8.jpg';
-import image9 from '../assets/9.jpg';
-import image10 from '../assets/10.jpg';
+export default class Example extends Component {
+  state = {
+    goToSlide: 0,
+    offsetRadius: 2,
+    showNavigation: true,
+    config: config.gentle
+  };
 
-// Card component
-const Card = ({ image }) => (
-  <div className='bg-white p-3 rounded shadow-lg' style={{ width: '14em', height: '16rem' }}>
-    <img src={image} alt='Card' className='w-full h-full object-cover rounded' />
-  </div>
-);
-
-// Carousel component
-const Carousel = ({ images, activeIndex }) => {
-  return (
-    <div className='relative flex justify-center items-center w-full'>
-      <div className='flex overflow-hidden w-full' style={{ height: '20rem' }}>
-        {images && images.map((image, i) => (
-          <div
-            key={i}
-            className='transition-transform duration-500 flex-none mx-2' // Added mx-2 for margin between images
-            style={{
-              transform: `translateX(${-25 * (activeIndex - i)}%)`,
-              opacity: Math.abs(activeIndex - i) >= 3 ? 0 : 1,
-              display: Math.abs(activeIndex - i) > 2 ? 'none' : 'block',
-            }}
-          >
-            <Card image={image} />
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-};
-
-// Carousell component (wrapper)
-const Carousell = () => {
-  const images = [
-    image1, image2, image3, image4, image5,
-    image6, image7, image8, image9, image10
+  icons = [
+    { icon: faSyringe, color: "#63E6BE", rotation: 180 },
+    { icon: faStethoscope, color: "#63E6BE" },
+    { icon: faVirus, color: "#63E6BE" },
+    { icon: faMaskFace, color: "#78f7a9", style: { '--fa-primary-color': '#78f7a9', '--fa-secondary-color': '#78f7a9' } },
+    { icon: faUserNurse, color: "#6cf9bc", style: { '--fa-primary-color': '#6cf9bc', '--fa-secondary-color': '#6cf9bc' } },
+    { icon: faVirusCovid, color: "#60d27c", style: { '--fa-primary-color': '#60d27c', '--fa-secondary-color': '#60d27c' } },
+    { icon: faHospital, color: "#63E6BE" },
+    { icon: faHouseMedical, color: "#71e5b3", style: { '--fa-primary-color': '#71e5b3', '--fa-secondary-color': '#71e5b3' } },
+    { icon: faPills, color: "#73e2b8", style: { '--fa-primary-color': '#73e2b8', '--fa-secondary-color': '#73e2b8' } },
+    { icon: faUserDoctor, color: "#63E6BE" },
+    { icon: faVialVirus, color: "#61ffba", style: { '--fa-primary-color': '#61ffba', '--fa-secondary-color': '#61ffba' } },
+    { icon: faStaffSnake, color: "#63E6BE" },
+    { icon: faPersonBreastfeeding, color: "#31c9ab", style: { '--fa-primary-color': '#31c9ab', '--fa-secondary-color': '#31c9ab' } },
   ];
 
-  const [activeIndex, setActiveIndex] = useState(0);
+  slides = this.icons.map((icon, index) => {
+    return {
+      key: uuidv4(),
+      content: (
+        <div style={styles.card}>
+          <FontAwesomeIcon icon={icon.icon} style={{ color: icon.color, fontSize: '100px' }} />  {/* Increased fontSize */}
+        </div>
+      ),
+      onClick: () => this.setState({ goToSlide: index })
+    };
+  });
 
-  const nextSlide = () => {
-    setActiveIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
+  componentDidMount() {
+    this.interval = setInterval(() => {
+      this.setState(prevState => ({
+        goToSlide: (prevState.goToSlide + 1) % this.slides.length
+      }));
+    }, 1500); 
+  }
 
-  const prevSlide = () => {
-    setActiveIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
-  };
+  componentWillUnmount() {
+    clearInterval(this.interval);
+  }
 
-  return (
-    <div className='w-full h-[24em] flex justify-center items-center relative'>
-      <Carousel images={images} activeIndex={activeIndex} />
-      <button className='absolute left-0 z-10 text-white' onClick={prevSlide} style={{ top: '50%', transform: 'translateY(-50%)' }}>
-        <TiChevronLeftOutline size={40} />
-      </button>
-      <button className='absolute right-0 z-10 text-white' onClick={nextSlide} style={{ top: '50%', transform: 'translateY(-50%)' }}>
-        <TiChevronRightOutline size={40} />
-      </button>
-      
-    </div>
-  );
+  render() {
+    return (
+      <div style={{ width: "100%", height: "400px", margin: "0 auto" }}>
+        <Carousel
+          slides={this.slides}
+          goToSlide={this.state.goToSlide}
+          offsetRadius={this.state.offsetRadius}
+          animationConfig={this.state.config}
+        />
+      </div>
+    );
+  }
+}
+
+const styles = {
+  card: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    width:'15em',
+    height: '40%',
+    backgroundColor: '#ffffff',
+    borderRadius: '10px',
+    padding: '20px',
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
+    color: '#fff'
+  }
 };
-
-// App component (or any other wrapper component)
-const App = () => {
-  return (
-    <div>
-      <Carousell />
-    </div>
-  );
-};
-
-export default App;

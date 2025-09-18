@@ -16,7 +16,13 @@ function Quality() {
         <div className="quality-content flex flex-col md:flex-row items-center mt-4 md:mt-8">
           <div className="quality-text md:w-1/2 md:pr-4"> 
             <p className="text-lg text-white leading-relaxed my-2">
-            {t("Quality.Qualitytext")}
+            {t("Quality.Qualitytext1")}
+            </p>
+            <p className="text-lg text-white leading-relaxed my-2">
+            {t("Quality.Qualitytext2")}
+            </p>
+            <p className="text-lg text-white leading-relaxed my-2">
+            {t("Quality.Qualitytext3")}
             </p>
           </div>
           <div className="quality-image md:w-1/2 ml-0 md:ml-4 mt-4 md:mt-0"> 

@@ -1,28 +1,38 @@
-{"navbar": {
-    "MZ pharma ": "MZ Pharmed",
+{
+  "navbar": {
+    "MZ pharma": "MZ Pharmed",
     "Home": "Accueil",
     "About us": "À propos de nous",
     "Product": "Produit",
     "Quality Standards": "Normes de qualité",
-    "Contact us": "Nous contacter"
+    "Contact us": "Contactez-nous"
   },
   "herosection": {
-    "About us text": "Nous sommes une équipe de professionnels dévoués, engagés à offrir l'excellence dans tout ce que nous faisons. Notre voyage a commencé avec une vision simple mais puissante : créer des expériences significatives qui résonnent avec nos clients et nos communautés. Au fil des années, nous avons grandi et évolué, mais nos valeurs fondamentales d'intégrité, d'innovation et d'inclusivité sont restées constantes. Au cœur de notre organisation se trouve une croyance passionnée dans le pouvoir de la collaboration. Nous croyons qu'en travaillant ensemble et en embrassant des perspectives diverses, nous pouvons obtenir des résultats remarquables. Notre équipe est composée d'individus talentueux issus de divers horizons, chacun apportant des compétences et des perspectives uniques. Cette diversité enrichit non seulement notre travail, mais favorise également une culture d'apprentissage et de croissance continue.",
+    "About us text1": "MZ Pharmed est une entreprise de soins de santé visionnaire qui est un leader du marché pour les consommables, les produits pharmaceutiques et les marques de médicaments en vente libre (OTC). Notre approche pionnière offre un accès à des soins de santé de haute qualité abordables avec un choix complet d'options thérapeutiques. Cela signifie que nous pouvons fournir de multiples solutions à de multiples problèmes médicaux.",
+    "About us text2": "Notre large portefeuille comprend des produits de classe mondiale fabriqués selon les plus hauts niveaux de qualité. Notre stratégie de tarification compétitive les rend accessibles à la fois au secteur privé et au secteur public de la santé. Cela nous positionne de manière unique pour servir un marché de la santé de plus en plus concurrentiel et exigeant.",
     "Vision & Mission": "Vision & Mission",
-    "Vision & Mission text": "Nous sommes une équipe de professionnels dévoués, engagés à offrir l'excellence dans tout ce que nous faisons. Notre voyage a commencé avec une vision simple mais puissante : créer des expériences significatives qui résonnent avec nos clients et nos communautés. Au fil des années, nous avons grandi et évolué, mais nos valeurs fondamentales d'intégrité, d'innovation et d'inclusivité sont restées constantes. Au cœur de notre organisation se trouve une croyance passionnée dans le pouvoir de la collaboration. Nous croyons qu'en travaillant ensemble et en embrassant des perspectives diverses, nous pouvons obtenir des résultats remarquables. Notre équipe est composée d'individus talentueux issus de divers horizons, chacun apportant des compétences et des perspectives uniques. Cette diversité enrichit non seulement notre travail, mais favorise également une culture d'apprentissage et de croissance continue."
+    "Vision & Mission text": "Notre vision est claire. Nous cherchons à fournir un accès à des soins de santé abordables en assemblant un portefeuille de médicaments et de consommables médicaux, à des prix abordables et livrés par des distributeurs ayant une expérience locale approfondie en logistique et distribution.",
+    "OUR EXTENSIVE HEALTHCARE PORTFOLIO": "NOTRE LARGE PORTFOLIO DE SOINS DE SANTÉ",
+    "EASSILY ACCESSIBLE": "FACILEMENT ACCESSIBLE",
+    "EMPOWERING THROUGH KNOWLEDGE": "RENFORCEMENT PAR LA CONNAISSANCE",
+    "AFFORDABLE FOR EVERYONE": "ABORDABLE POUR TOUS",
+    "NO SHORTCUTS WHEN IT COMES TO QUALITY": "PAS DE RACCOURCIS QUAND IL S'AGIT DE QUALITÉ"
   },
   "Product": {
     "See Our Products": "Voir nos produits",
-    "Blue text": "Nous avons plusieurs candidats produits en développement que nous croyons avoir été significativement sécurisés",
-    "White text": "À vrai dire, eos et accusam justo duo dolores et ea rebum et clita kasd gubergren non sea takimata sanctus est lorem ipsum dolor consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore magna aliquyam sedam voluptua. À vrai dire, eos et accusam et justo duo dolores..",
+    "Blue text": "MZ Pharmed a évolué en une entreprise de soins de santé à large spectre en lançant une gamme complète de produits pharmaceutiques et de médicaments en vente libre.",
+    "White text1": "Notre portefeuille pharmaceutique comprend plus de 300 produits pharmaceutiques, conçus pour traiter la majorité des maladies transmissibles et non transmissibles. Le portefeuille est regroupé sous plusieurs « arbres thérapeutiques » qui couvrent de larges domaines de la médecine tels que les anti-infectieux, les maladies cardiovasculaires et le diabète. Les arbres thérapeutiques de MZ Pharmed offrent la commodité de multiples options de traitement dans toutes les branches de ces grandes conditions de santé.",
+    "White text2": "Toutes nos thérapies sont fabriquées selon les normes de qualité les plus élevées et sont conformes aux directives de Bonnes Pratiques de Fabrication (GMP). De nombreuses de nos thérapies figurent sur la liste des médicaments essentiels de l'OMS et sur les listes nationales de médicaments essentiels de divers pays.",
     "Button": "Voir tous les produits"
   },
   "Quality": {
     "QUALITYhead": "Qualité",
-    "Qualitytext": "Tous les produits fournis par Neomedic sont fabriqués dans des sites qui maintiennent des niveaux élevés de qualité de produit. Les produits fournis par Neomedic sont enregistrés auprès de la MHRA et conformes aux exigences du marquage CE. Le cas échéant, les produits fournis par Neomedic sont préqualifiés selon les normes de l'OMS. En utilisant uniquement des matières premières approuvées, tous les produits pharmaceutiques Neomedic sont produits conformément aux exigences réglementaires strictes et sont soutenus par des ensembles complets d'enregistrements locaux, de dossiers de produits et de tests d'équivalence. Notre engagement envers la qualité est encore démontré par des audits internes rigoureux et des processus d'amélioration continue qui garantissent que nos produits répondent ou dépassent constamment les normes de l'industrie."
+    "Qualitytext1": "Tous les produits fournis par MZ Pharmed sont fabriqués sur des sites qui maintiennent des niveaux élevés de qualité des produits. Les produits fournis par MZ Pharmed sont enregistrés auprès de la FDA. Le cas échéant, les produits fournis par MZ Pharmed sont préqualifiés selon les normes de l'OMS.",
+    "Qualitytext2": "En utilisant uniquement des matières premières approuvées, tous les produits pharmaceutiques MZ Pharmed sont produits selon des exigences réglementaires rigoureuses et sont soutenus par des ensembles complets de dossiers de produit, de tests d'équivalence et d'enregistrements locaux.",
+    "Qualitytext3": "MZ Pharmed a commencé comme une entreprise de consommables médicaux, fournissant tout, des consommables quotidiens de base aux dispositifs médicaux à haute valeur ajoutée pour une utilisation spécialisée. Notre portefeuille de consommables de confiance est divisé en 13 gammes de produits, qui couvrent un large éventail de besoins médicaux."
   },
   "Our Distribution Network": {
-    "Our Distribution Networkhead": "Notre Réseau de Distribution",
+    "Our Distribution Networkhead": "Notre réseau de distribution",
     "Mali": "Mali",
     "Kenya": "Kenya",
     "Libya": "Libye",
@@ -34,12 +44,14 @@
   },
   "Contactus": {
     "FAQs": "FAQs",
-    "Write your email": "Écrivez votre e-mail",
-    "Write your Comment": "Écrivez votre commentaire",
-    "Button": "Envoyer"
+    "Name": "Nom",
+    "your email": "Écrivez votre email",
+    "Write your Comment": "Écrivez-nous..",
+    "Button": "Envoyer",
+    "GetInTouch": "Prenez contact aujourd'hui!"
   },
   "Our happy customers": {
-    "Our happy customers head":"Nos clients heureux",
+    "Our happy customers head": "Nos clients heureux",
     "FAST DELIVERIES": "LIVRAISONS RAPIDES",
     "HAPPY CUSTOMERS": "CLIENTS SATISFAITS",
     "+ MEDICINES": "+ MÉDICAMENTS",
@@ -49,10 +61,10 @@
     "About": "À propos",
     "Pricing": "Tarification",
     "Contact": "Contact",
-    "Terms": "Conditions",
-    "Text": "2024 MZ Pharmed. Tous droits réservés"
+    "Terms & Conditions": "Conditions générales",
+    "Our Services": "Nos services",
+    "Privacy Policy": "Politique de confidentialité",
+    "Text": "2024 MZ Pharmed. Tous droits réservés",
+    "All rights reserved": "Tous droits réservés"
   }
-   
-
-  }
-  
+}

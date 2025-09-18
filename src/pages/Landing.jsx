@@ -12,8 +12,9 @@ function Landing() {
       <br />
       
       <section id="home" className="relative w-full overflow-hidden">
-  <img className='w-full object-cover ' src={mgimage} alt="Background" />
+  <img className="w-full object-cover" src={mgimage} alt="Background" />
 </section>
+
 
       <Herosection />
       

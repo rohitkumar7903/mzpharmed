@@ -8,19 +8,28 @@
     "Contact us": "Contact us"
       },
 "herosection":{
-      "About us text":" We are a dedicated team of professionals committed to delivering excellence in everything we do. Our journey began with a simple yet powerful vision: to create meaningful experiences that resonate with our clients and communities. Over the years, we have grown and evolved, but our core values of integrity, innovation, and inclusivity have remained steadfast. At the heart of our organization is a passionate belief in the power of collaboration. We believe that by working together and embracing diverse perspectives, we can achieve remarkable outcomes. Our team is made up of talented individuals from various backgrounds, each bringing unique skills and insights to the table. This diversity not only enriches our work but also fosters a culture of continuous learning and growth.",
+      "About us text1":"MZ Pharmed is a visionary healthcare company that is a market leader for Consumables, Pharmaceuticals and Over-the-counter medicine (OTC) brands. Our pioneering approach offers access to affordable high-quality healthcare with a comprehensive choice of therapeutic options. This means that we can provide multiple solutions to multiple medical problems",
+     "About us text2":"Our broad portfolio includes world-leading products manufactured to the highest levels of quality. Our competitive pricing strategy brings them within the reach of both the private and public health sectors. This positions us uniquely to serve an increasingly competitive and demanding healthcare market.",
       "Vision & Mission":"Vision & Mission",
-      "Vision & Mission text":"We are a dedicated team of professionals committed to delivering excellence in everything we do. Our journey began with a simple yet powerful vision: to create meaningful experiences that resonate with our clients and communities. Over the years, we have grown and evolved, but our core values of integrity, innovation, and inclusivity have remained steadfast.At the heart of our organization is a passionate belief in the power of collaboration. We believe that by working together and embracing diverse perspectives, we can achieve remarkable outcomes. Our team is made up of talented individuals from various backgrounds, each bringing unique skills and insights to the table. This diversity not only enriches our work but also fosters a culture of continuous learning and growth."
-     },
+      "Vision & Mission text":"Our vision is clear. We seek to provide access to affordable healthcare by assembling a portfolio of medicines and medical consumables, priced at affordable rates and delivered through distributors with deep local logistics and distribution experience..",
+    "OUR EXTENSIVE HEALTHCARE PORTFOLIO":"Our extensive healthcare portfolio",
+    "EASSILY ACCESSIBLE":"Eassily accessible",
+    "EMPOWERING THROUGH KNOWLEDGE":"Empowering through knowledge",
+    "AFFORDABLE FOR EVERYONE":"Affordable for everyone",
+    "NO SHORTCUTS WHEN IT COMES TO QUALITY":"No shortcuts when it comes to quality"
+    },
      "Product": {
         "See Our Products":"See Our Products",
-        "Blue text":"We have several product candidates in development that we believe have been significantly de-risked ",
-        "White text":"At vero eos et accusam justo duo dolores et ea rebuit et clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore magna aliquyam sedam voluptua at vero eos et accusam et justo duo dolores..",
+        "Blue text":"MZ Pharmed has evolved into a broad-spectrum healthcare company by launching a comprehensive range of pharmaceuticals and over-the-counter medicines. ",
+        "White text1":"Our pharmaceutical portfolio includes over 300 pharmaceutical products, designed to treat the majority of communicable and non-communicable diseases. The portfolio is grouped under several ‘Therapy Trees’ these cover broad areas of medicine such anti-infectives, cardiovascular and diabetes. MZ Pharmed therapy trees offer the convenience of multiple treatment options across all branches of these major health conditions.",
+        "White text2":"All of our therapies are manufactured to the highest quality standards and conform to Good Manufacturing Practice (GMP) guidelines. Many of our therapies are on the WHO Essential Medicines list and national Essential Medicines lists for various countries.",
         "Button":"See all Products"    
            },
       "Quality":{
         "QUALITYhead":"Quality",
-        "Qualitytext":" All products supplied by Neomedic are manufactured at sites which maintain high levels of product quality. Products supplied by Neomedic are registered with MHRA and conform to CE marking requirements. Where applicable, products supplied by Neomedic are prequalified to WHO standards.  Using only approved raw materials, all Neomedic pharmaceutical products are produced to exacting regulatory requirements and are supported by full sets of local registrations, product dossiers, and equivalence testing. Our commitment to quality is further demonstrated through rigorous internal audits and continuous improvement processes that ensure our products consistently meet or exceed industry standards."
+        "Qualitytext1":" All products supplied by MZ Pharmed  are manufactured at sites which maintain high levels of product quality .Products supplied by MZ Pharmed are registered with FDA . Where applicable, products supplied by MZ Pharmed are prequalified to WHO standards.",
+        "Qualitytext2":" Using only approved raw materials, all MZ Pharmed  pharmaceutical products are produced to exacting regulatory requirements and are supported by full sets of local registrations, product dossiers and equivalence testing",
+        "Qualitytext3":"MZ Pharmedbegan as a medical consumables company, providing everything from basic, everyday consumables to high value medical disposables for specialist use. Our portfolio of trusted consumables is divided into 13 product ranges, which cover a broad range of medical needs."
       } ,
      "Our Distribution Network":{
         "Our Distribution Networkhead":"Our Distribution Network",
@@ -35,9 +44,11 @@
      } ,
    "Contactus":{
            "FAQs":"FAQs",
-           "Write your email":"Write your email",
-           "Write your Comment":"Write your Comment",
-           "Button":"Send"
+           "Name":"Name",
+           "your email":"Write your email",
+           "Write your Comment":"Write to us..",
+           "Button":"Send",
+           "GetInTouch": "Get in touch today!"
    },
    "Our happy customers":{
             "Our happy customers head":"Our happy customers",
@@ -51,7 +62,12 @@
   "About":"About",
   "Pricing":"Pricing",
   "Contact":"Contact",
-   "Terms":"Terms",
-      "Text":" 2024 MZ Pharmed. All rights reserved"   
+   "Terms & Conditions":"Terms & Conditions",
+   "Our Services":"Our Services",
+"Privacy Policy":"Privacy Policy",
+ "Text":" 2024 MZ Pharmed. All rights reserved" , 
+ "All rights reserved":"All rights reserved" 
                      }         
 }
+
+

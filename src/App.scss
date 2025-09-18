@@ -1,5 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
+
+@mixin sp-layout {
+  @media screen and (max-width: 750px) {
+    @content;
+  }
+}
+
+@mixin sgp-layout {
+  @media screen and (max-height: 100px) {
+    @content;
+  }
+}
+
+@mixin pc-layout {
+  @media screen and (min-width: 751px) {
+    @content;
+  }
+}
+
+.mySwiper {
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 3/2; 
+  border-radius: 10px;
+}
+
+
+.swiper-button-next {
+  color: #000; 
+  padding-left: 93%;
+  transition: background-color 0.3s, transform 0.3s; 
+}
+
+.swiper-button-prev {
+  color: #000; 
+  padding-right: 93%;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+
+
 .holderofproducts {
   background: rgb(0,30,139);
 background: linear-gradient(0deg, rgba(0,30,139,1) 0%, rgba(31,255,196,1) 100%);
@@ -20,7 +78,7 @@ background: linear-gradient(0deg, rgba(31,255,196,1) 0%, rgba(1,90,184,1) 35%, r
 }
 
 #product {
-  padding: 0% 0%;
+  margin-bottom: -50px;
 }
 
 .carousel {
@@ -136,11 +194,18 @@ background: linear-gradient(0deg, rgba(31,255,196,1) 0%, rgba(1,90,184,1) 35%, r
   // font-family: poppins;
   font-weight: 650;
   color: #ffffff;
-  font-size: 47px
-}.SectionOfFlags {
-  display: flex;
+  font-size: 47px;
+  @include sp-layout {
+   font-size: 30px;
+  }
+}
+
+.SectionOfFlags {
+display: flex;
 justify-content: space-between;
-padding: 40px 180px;
+padding: 40px 250px;
+@include sp-layout {
+padding: 14px 0px;}
 }
 .flags {
   width: 100%;
@@ -165,6 +230,12 @@ justify-content: space-between;
   font-size: 18px;
   font-family: poppins;
   font-weight: 650;
+  @include sp-layout {
+    height: 110px;
+    font-size: 10px;
+    font-size: 14px;
+  }
+  
 }
 .distbanner {
   width: 100%;
@@ -176,6 +247,9 @@ justify-content: space-between;
   display: flex;
   justify-content: center;
   align-items: center;
+  @include sp-layout {
+    height: 120px;
+  }
 }
 
 
@@ -191,7 +265,7 @@ justify-content: space-between;
 }
 .external {
   overflow: hidden;
-  height: 80vh;
+  height: 60vh;
 }
 
 
@@ -200,20 +274,21 @@ justify-content: space-between;
 }
 
 .horizontal-scroll-wrapper {
+  padding-top: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vh;
+  width: 60vh;
   transform: rotate(-90deg) translate3d(0,-100vh,0);
   transform-origin: right top;
   overflow-y: auto;
   overflow-x: hidden;
-  padding: 0;
-  height: 100vw;
+  height: 134vw;
   perspective: 1px;
   transform-style: preserve-3d;
   padding-bottom: 10rem;
-}
+  }
+
 .img-wrapper {
   transform: rotate(90deg);
   display: flex;
@@ -266,10 +341,14 @@ justify-content: space-between;
 
 
 .holderofimages {
-  background-image: url(https://i.postimg.cc/CxZXtSRR/ourteaamgifs.gif);
+  background: white;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
+  @include sp-layout {
+    display: none;
+    }
+
   }
 
 .img-wrapper a {
@@ -300,9 +379,27 @@ p {
     fill: currentcolor;
 }
 
+.quicksetting {
+  width: 30%;
+  @include sp-layout {
+  width: 100%;
+  }
+}
+
+.map {
+  width: 650px;
+  height: 308px;
+  @include sp-layout {
+  height: 400px;
+  width: 400px;
+  padding-top: 30px;
+  }
+}
 
 
-
+SwiperSlide {
+  background: white;
+}
 
 div.ccc {
   background-color: rgb(26, 26, 26);
@@ -311,6 +408,11 @@ div.ccc {
   justify-content: space-evenly;
   border-radius: 15px;
   padding: 50px;
+  @include sp-layout {
+    flex-direction: column;
+    margin: 3% 3%;
+
+  }
 }
 
 ul.footermenulist {
@@ -398,10 +500,12 @@ ul li:nth-child(4) a:before {
 div.footer3 {
   background-color: #151515;
   width: 100%;
-  height: 400px;
   display: flex;
   justify-content: center;
   background-image: url(..assets\footeroverlay.png);
+  @include sp-layout {
+    flex-direction: column;
+  }
   
 }
 
@@ -413,6 +517,13 @@ div.footernavmenu {
   padding-top: 50px;
   align-items: left;
   padding-left: 150px;
+  @include sp-layout {
+    width: 100%;
+    align-items: flex-start;
+padding-left:50px;
+height: 326px;
+
+  }
 
 }
 
@@ -425,6 +536,12 @@ div.footerFAQ {
 
   height: 400px;
   width: 30%;
+  @include sp-layout {
+    width: 100%;
+    align-items: flex-start
+
+
+  }
 
 }
 
@@ -436,6 +553,9 @@ div.footerbranding {
 
   height: 400px;
   width: 30%;
+  @include sp-layout {
+    width: 100%;
+  }
 
 }
 
@@ -482,6 +602,9 @@ padding-bottom: 15px;
   font-size: 36px;
   font-family: glacial indifference;
   color: white;
+  @include sp-layout {
+    font-size: 24px;
+  }
 }
 
 span.mottofooter {
@@ -500,6 +623,12 @@ span.mottofooter {
   background-color: black;
   padding-left: 222px;
   padding-bottom: 26px;
+  @include sp-layout {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+  }
 }
 
 .counterbackground {
@@ -526,6 +655,7 @@ border-color: #dd4b39;
   font-size: 44px;
   transition: background-color .3s, 
   opacity .5s, visibility .5s;
+  z-index: 999;
 
   cursor: pointer;
 }
@@ -551,5 +681,21 @@ border-color: #dd4b39;
   font-family: inter;
   font-size: 12px;
   letter-spacing: 7px;
+  @include sp-layout {
+    font-size: 10px;
+    letter-spacing: 4px;
+  }
 }
 
+.version {
+  color: rgb(169, 169, 169);
+  background-color: #151515;
+  font-size: 12px;
+  padding-left: 40px;
+  @include sp-layout {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  }
+
+}
